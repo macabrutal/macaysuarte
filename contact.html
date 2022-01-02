@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<link>
+<!-- ROBOTO - Google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="./styles.css" />
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<!-- bootswatch.com CSS -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/solar/bootstrap.min.css" integrity="sha384-NCwXci5f5ZqlDw+m7FwZSAwboa0svoPPylIW3Nf+GBDsyVum+yArYnaFLE9UDzLd" crossorigin="anonymous"> -->
+
+<link href="https://bootswatch.com/5/minty/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+<!-- fontawesome. -->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+<title>Cuadros Maca y su arte</title>
+<meta charset="UTF-8" />
+
+<!-- RESPONSIVE -->
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body>
+  <!-- NAV-->
+  <nav class="nav navbar navbar-expand-lg navbar-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="./img/logo_dark.png" class="logo" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú-->
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Conversemos</a>
+          </li>
+        </ul>
+        <!-- Carrito-->
+        <ul className="navbar-nav me-auto">
+          <li className="nav-item ">
+            <a id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModal" class="btn btn-carro ">Tu carro
+              de compras <i class="fas fa-shopping-cart fa-1x"></i></a>
+          </li>
+        </ul>
+        <!-- FIN Carrito-->
+      </div>
+      <!-- FIN Menú-->
+
+      <!-- LightMode / DarkMode-->
+      <ul>
+        <li><button id="btnLightMode" class="btnLightMode btn btn-light">Light Mode <i class="fas fa-sun"></i></button>
+        </li>
+        <li>
+          <button id="btnDarkMode" class="btnDarkMode btn btn-dark">Dark Mode <i class="fas fa-moon"></i></button>
+        </li>
+      </ul>
+      <!-- FIN LightMode / DarkMode-->
+
+      <div>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- fin NAV-->
+
+  <div class="contenedor">
+    <!-- Obtener elemento por Id: getElementById() -->
+    <h1 id="title">Conversemos</h1>
+
+    <!--  -->
+    <!-- Evento submit -->
+    <div class="personalizado">
+      <h4 class="inputs">¿Necesitas un cuadro personalizado? Escríbenos!</h4>
+      <form id="formulario" class="busqueda">
+        <input type="text" class="form-control" placeholder="Nombre">
+        <input type="text" class="form-control" placeholder="Apellido">
+        <input type="email" class="form-control mail" placeholder="Tu mail">
+        <input type="text" class="form-control" placeholder="Estilo de cuadro">
+        <select class="form-select cantidad" id="exampleSelect1" placeholder="Medida">
+          <option>Medida</option>
+          <option>23 x 18</option>
+          <option>24 x 29</option>
+        </select>
+      
+        <select class="form-select cantidad" id="exampleSelect1" placeholder="Cantidad">
+          <option>Cantidad</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+        </select>
+        <input type="submit" class="submit btn btn-primary btn-sm" value="ENVIAR">
+
+      </form>
+    </div>
+    <!--  -->
+
+    <!-- ARROW return to Top -->
+    <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
+
+    <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+
+    <!-- <span class="go-up" style="display: inline;"><img class="go-up-arrow" src="img/chevron-up.d3ef5917.svg" alt="up-arrow"></span> -->
+  </div>
+  <footer>© 2021 Maca y su arte. Todos los derechos reservados</footer>
+
+  <!-- CDN JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- LLAMAR A LOS ARCHIVOS js -->
+  <script src="contact.js"></script>
+  <script src="index.js"></script>
+  <script src="Producto.js"></script>
+  <script src="functions.js"></script>
+</body>
+
+</html>
