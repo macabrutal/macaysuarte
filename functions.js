@@ -22,7 +22,7 @@ function compraTotal(productosStorage) {
 
     if (acumulador == 0) {
         parrafoCompra.innerHTML = ""
-        modalBody.innerHTML = "<p>Los siento, tu carrito está vacío :(</p>"
+        modalBody.innerHTML = "<p>Lo siento, tu carrito está vacío :(</p>"
     } else {
         parrafoCompra.innerHTML = `<b class="total">Total a pagar: $${new Intl.NumberFormat("de-DE").format(acumulador)}</b>`
     }
@@ -96,12 +96,17 @@ function cargarCarritoModal(productosStorage) {
 
 botonCarrito.addEventListener('click', () => {
     let productosStorage = JSON.parse(localStorage.getItem('carrito'))
-
     cargarCarritoModal(productosStorage)
-
 })
+
 // Gracias por tu compra!
-botonFinalizar.addEventListener('click', () => {
+botonFinalizar.addEventListener('click', (event) => {
+    let productosStorage = JSON.parse(localStorage.getItem('carrito'))
+    if (productosStorage.length === 0) {
+        return;
+    }
+    
+
     localStorage.setItem('carrito', JSON.stringify([]))
     swal("¡Gracias por su compra!", "Los productos serán enviados a la brevedad", "success");
 })
