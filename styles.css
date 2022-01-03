@@ -211,6 +211,11 @@ button:hover {
     background-color: #629c9e !important;
 
 }
+.productos {
+    margin: 0 auto;
+    padding-top: 20px;
+    justify-content: center;
+}
 
 .cantidad-modal {
     width: 100% !important;
@@ -221,14 +226,13 @@ button:hover {
 
 input {
     height: 38px !important;
-}
-
-input {
+    font-size: 16px!important;
     margin-right: 5px;
 }
 
+
 input.form-control {
-    font-size: 14px !important;
+    font-size: 16px !important;
     color: #34495e;
     font-size: 16px;
     border-radius: 3px;
@@ -239,6 +243,7 @@ input.form-control {
 
 input.mail {
     margin-top: 0;
+    font-size: 16px!important;
 }
 
 select.form-select,
@@ -246,13 +251,17 @@ select.form-select,
     font-size: 14px !important;
     display: block;
     height: 38px !important;
-    font-size: 16px;
+    font-size: 16px!important;
     border-radius: 3px;
     margin: 10px 2px 10px 0;
-    padding: 3px;
-    text-align: center;
+    padding: 3px!important;
+    text-align: center!important;
 }
 
+.form-select cantidad{
+    text-align: center!important;
+
+}
 
 input.submit {
     width: 100% !important;
@@ -309,8 +318,7 @@ h4.inputs {
 .swal-footer {
     text-align: center;
 }
-
-/* MODAL */
+/* fin MODAL */
 
 .card {
     margin: 10px auto;
@@ -318,20 +326,7 @@ h4.inputs {
 
 }
 
-.card_api h3 {
-    font-size: 14px;
-}
 
-.card_api a {
-    font-size: 14px;
-} */
-
-
-.productos {
-    margin: 0 auto;
-    padding-top: 20px;
-    justify-content: center;
-}
 
 /* FLECHA Return to top  */
 #return-to-top {
@@ -396,7 +391,7 @@ footer {
 }
 
 
-/* -- MOBILE CONTENIDO -- */
+/* ---- MOBILE CONTENIDO ---- */
 @media only screen and (max-width: 400px) {
     body {
         font-family: 'Roboto', sans-serif;
@@ -420,21 +415,20 @@ footer {
     }
 
     h1 {
-        font-size: 28px !important;
-        margin-bottom: 20px !important;
+        font-size: 30px !important;
+        margin-bottom: 0;
     }
 
     h4 {
         font-size: 18px !important;
+        margin-top: 8px!important;
     }
 
     #btnLightMode,
     #btnDarkMode {
         margin: 15px auto 0;
     }
-    .productos {
-    padding-top: 0; 
-    }
+  
     .personalizado {
         padding-top: 0;
     }
@@ -442,6 +436,7 @@ footer {
     form.busqueda {
         width: 100%;
         margin: 0 auto;
+        padding-top: 10px;
     }
   
     input.form-control {
@@ -458,7 +453,7 @@ footer {
     .form-control {
         width: 100%;
         margin: 8px auto;
-        text-align: center;
+        text-align: center!important;
     }
 
     input.submit {
@@ -472,6 +467,9 @@ footer {
     ol,
     ul {
         padding-left: 5px !important;
+    }
+    .productos {
+        padding-top: 10px;
     }
 
     .button:hover,
