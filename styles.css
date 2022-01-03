@@ -44,11 +44,9 @@ h3 {
 .blackMode .logo_dark {
     background-image: url("./img/logo_dark.png");
 }
-
 /* fin BLACKMODE */
 
 /* -- ESCRITORIO -- */
-
 .contenedor {
     width: 100%;
     text-align: center;
@@ -80,9 +78,6 @@ nav ul li {
     margin-right: 0;
 }
 
-/* #btnLightMode, #btnDarkMode {
-    width: 150px;
-} */
 
 nav h2 {
     margin: 10px;
@@ -134,9 +129,6 @@ h4 {
     margin-top: 15px;
 }
 
-/* .border-primary {
-    border-color: #bfaf82!important;
-} */
 
 .border-success {
     border-color: #bfaf82 !important;
@@ -157,7 +149,6 @@ h4 {
     margin: 0 auto;
     padding-top: 20px;
     width: 100%;
-
 }
 
 form.busqueda {
@@ -178,7 +169,6 @@ li {
     font-weight: 700;
     font-size: 18px;
 }
-
 
 .button:hover,
 button:hover {
@@ -204,8 +194,6 @@ button:hover {
     border-color: #73b2b5 !important;
 }
 
-
-
 .btn-secondary:hover {
     background-color: #629c9e !important;
     border-color: #629c9e !important;
@@ -228,7 +216,6 @@ button:hover {
     width: 100% !important;
     margin: 0 auto !important;
     padding: 35px;
-
 }
 
 
@@ -243,7 +230,6 @@ input {
 input.form-control {
     font-size: 14px !important;
     color: #34495e;
-    /* border: 1px solid #b2a274!important; */
     font-size: 16px;
     border-radius: 3px;
     padding: 3px;
@@ -262,7 +248,6 @@ select.form-select,
     height: 38px !important;
     font-size: 16px;
     border-radius: 3px;
-    /* border: 1px solid #b2a274!important; */
     margin: 10px 2px 10px 0;
     padding: 3px;
     text-align: center;
@@ -288,7 +273,6 @@ h4.inputs {
 .btn-danger {
     background-color: #9db3b5 !important;
     border-color: #9db3b5 !important;
-
 }
 
 .total {
@@ -334,37 +318,12 @@ h4.inputs {
 
 }
 
-
-/* .card_api {
-    padding: 15px;
-    width: 43rem;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, .125);
-    border-radius: 0.25rem;
-    text-align: left;
-}
-
-.card_api p {
-    margin: 6px;
-    font-size: 14px;
-}
-
 .card_api h3 {
     font-size: 14px;
 }
 
 .card_api a {
     font-size: 14px;
-} */
-
-
-/* .coleccion {
-    margin-left: 45px;
-} */
-
-/* .mostrarColeccion {
-    margin-bottom: 30px;
 } */
 
 
@@ -375,12 +334,10 @@ h4.inputs {
 }
 
 /* FLECHA Return to top  */
-
 #return-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    /* background: #657c7c; */
     background: rgb(101, 124, 124);
     background: rgba(101, 124, 124, 0.8);
     width: 50px;
@@ -424,7 +381,6 @@ h4.inputs {
 .icon-chevron-up:before {
     content: "\f077";
 }
-
 /* -----*/
 
 footer {
@@ -504,7 +460,6 @@ footer {
         margin: 8px auto;
         text-align: center;
     }
-
 
     input.submit {
         width: 100% !important;
