@@ -466,8 +466,8 @@ footer {
     }
 
     h1 {
-        font-size: 29px !important;
-        margin-bottom: 0;
+        font-size: 28px !important;
+        margin-bottom: 0!important;
         font-weight: 300 !important; 
     }
 
