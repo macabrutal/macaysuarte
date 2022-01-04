@@ -461,7 +461,7 @@ footer {
         width: 100%;
         min-height: 400px;
         text-align: center;
-        padding: 30px;
+        padding: 19px;
         align-content: center;
     }
 
@@ -475,9 +475,12 @@ footer {
         margin-top: 8px !important;
         font-weight: bolder !important; 
     }
+    .card-body {
+        padding: 0.2rem 1rem 1rem!important; 
+    }
     p.card-text{
         font-size: 17px!important;
-        margin-bottom: 5px;
+        margin-bottom: 3px !important;
     }
 
     ol,
