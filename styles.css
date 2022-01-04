@@ -55,6 +55,7 @@ ul.lightDarkMode {
 /* -- ESCRITORIO -- */
 .contenedor {
     width: 100%;
+    min-height: 645px;
     text-align: center;
     padding: 30px;
     align-content: center;
@@ -445,6 +446,13 @@ footer {
     ul.lightDarkMode {
         justify-content: right !important;
         margin-top: 17px;
+    }
+    .contenedor {
+        width: 100%;
+        min-height: 400px;
+        text-align: center;
+        padding: 30px;
+        align-content: center;
     }
 
     h1 {
