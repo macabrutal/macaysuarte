@@ -63,7 +63,7 @@ divProductos && fetch('productos.json')
                    <div class="card-body">
                        <h4 class="card-title">Cuadro ${productoEnArray.nombre}</h4>
                        <p class="card-text">Medidas: ${productoEnArray.medidas}</p>
-                       <p class="card-text">$${productoEnArray.precio}</p>
+                       <p class="card-pice">$${productoEnArray.precio}</p>
                        <button id="boton${indice}" class="btn btn-primary "> AGREGAR AL CARRO </button>
                    </div>
                </div>
