@@ -48,7 +48,7 @@ localStorage.setItem('carrito', JSON.stringify([]))
 let divProductos = document.getElementById("divProductos")
 let botonCarrito = document.getElementById("botonCarrito")
 let modalBody = document.getElementById("modal-body")
-let botonFinalizarCompra = document.getElementById("botonFinalizarCompra")
+let botonFinalizar = document.getElementById("botonFinalizar")
 let parrafoCompra = document.getElementById('precioTotal')
 let acumulador;
 
