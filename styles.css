@@ -155,7 +155,6 @@ p.card-pice{
     margin-bottom: 5px;
     font-weight: bold;
     color:#b7a159 ;
-
 }
 
 
@@ -232,7 +231,7 @@ button:hover {
     color: #b2a274 !important;
     border-color: #629c9e !important;
     width: 40px !important;
-    margin: 0 auto;
+    margin: 0 auto!important;
 }
 
 .btn-outline-secondary:hover {
@@ -252,7 +251,6 @@ button:hover {
     margin: 0 auto !important;
     padding: 35px;
 }
-
 
 input {
     height: 38px !important;
@@ -471,8 +469,12 @@ footer {
         font-weight: 300 !important; 
     }
 
-    h4 {
-        margin-top: 8px !important;
+    h4.card-title {
+        margin: 8px auto 2px !important;
+        font-weight: bolder !important; 
+    }
+    h5.card-title {
+        margin: 8px auto 0 !important;
         font-weight: bolder !important; 
     }
     .card-body {
@@ -544,7 +546,13 @@ footer {
         padding-right: 0;
         margin-right: 0 !important;
     }
-
+    .modal-body {
+        padding: 0.5rem 0.5rem 0!important;
+    }
+    .cantidad-modal {
+        padding: 12px;
+        width: 50% !important;
+    }
 
     footer {
         height: 90px;
