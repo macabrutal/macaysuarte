@@ -44,6 +44,12 @@ h3 {
 .blackMode .logo_dark {
     background-image: url("./img/logo_dark.png");
 }
+
+ul.lightDarkMode {
+    justify-content: right !important;
+    margin-top: 5px;
+}
+
 /* fin BLACKMODE */
 
 /* -- ESCRITORIO -- */
@@ -57,6 +63,16 @@ h3 {
 .nav {
     background-color: #b7a159 !important;
     padding: 20px !important;
+}
+
+.navbar-brand {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+}
+
+a.navbar-brand {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
 }
 
 .bg-primary {
@@ -84,6 +100,7 @@ nav h2 {
     color: #fff;
 }
 
+
 h1,
 h2,
 h3,
@@ -105,14 +122,15 @@ h3 {
 }
 
 h4 {
-    font-size: 16px ;
+    font-size: 16px;
     margin-bottom: 0;
     font-weight: 300;
 }
 
-.btn-carro {
+ul .btn-carro {
     background-color: #4c9686 !important;
     border-color: #4c9686 !important;
+    margin-top: 8px;
 }
 
 .btn-carro:hover {
@@ -211,6 +229,7 @@ button:hover {
     background-color: #629c9e !important;
 
 }
+
 .productos {
     margin: 0 auto;
     padding-top: 20px;
@@ -226,7 +245,7 @@ button:hover {
 
 input {
     height: 38px !important;
-    font-size: 16px!important;
+    font-size: 16px !important;
     margin-right: 5px;
 }
 
@@ -243,7 +262,7 @@ input.form-control {
 
 input.mail {
     margin-top: 0;
-    font-size: 16px!important;
+    font-size: 16px !important;
 }
 
 select.form-select,
@@ -251,15 +270,15 @@ select.form-select,
     font-size: 14px !important;
     display: block;
     height: 38px !important;
-    font-size: 16px!important;
+    font-size: 16px !important;
     border-radius: 3px;
     margin: 10px 2px 10px 0;
-    padding: 3px!important;
-    text-align: center!important;
+    padding: 3px !important;
+    text-align: center !important;
 }
 
-.form-select cantidad{
-    text-align: center!important;
+.form-select cantidad {
+    text-align: center !important;
 
 }
 
@@ -318,6 +337,7 @@ h4.inputs {
 .swal-footer {
     text-align: center;
 }
+
 /* fin MODAL */
 
 .card {
@@ -376,6 +396,7 @@ h4.inputs {
 .icon-chevron-up:before {
     content: "\f077";
 }
+
 /* -----*/
 
 footer {
@@ -387,7 +408,6 @@ footer {
     text-align: center;
     color: #fff;
     font-size: 14px;
-
 }
 
 
@@ -409,9 +429,22 @@ footer {
         padding: 5px 0 !important;
     }
 
-    .navbar-brand {
-        margin-right: 0 !important;
-        padding-right: 0 !important;
+    a.navbar-brand {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    ul .btn-carro {
+        margin-top: 18px;
+    }
+
+    button.navbar-toggler {
+        margin-top: 0 !important;
+    }
+
+    ul.lightDarkMode {
+        justify-content: right !important;
+        margin-top: 17px;
     }
 
     h1 {
@@ -421,14 +454,16 @@ footer {
 
     h4 {
         font-size: 18px !important;
-        margin-top: 8px!important;
+        margin-top: 8px !important;
     }
 
-    #btnLightMode,
-    #btnDarkMode {
-        margin: 15px auto 0;
+    ol,
+    ul {
+        padding-left: 0 !important;
+        margin-left: 0 !important;
     }
-  
+
+
     .personalizado {
         padding-top: 0;
     }
@@ -438,9 +473,10 @@ footer {
         margin: 0 auto;
         padding-top: 10px;
     }
-  
+
     input.form-control {
         width: 100%;
+        margin-bottom: 10px;
     }
 
     input.mail {
@@ -452,8 +488,8 @@ footer {
     select.form-select,
     .form-control {
         width: 100%;
-        margin: 8px auto;
-        text-align: center!important;
+        margin: 10px auto;
+        text-align: center !important;
     }
 
     input.submit {
@@ -468,6 +504,7 @@ footer {
     ul {
         padding-left: 5px !important;
     }
+
     .productos {
         padding-top: 10px;
     }
@@ -478,8 +515,16 @@ footer {
         color: #fff;
     }
 
+    .container-fluid {
+        padding-right: 0;
+        margin-right: 0 !important;
+    }
+
+
     footer {
-        height: 80px;
+        height: 90px;
+        padding: 15px;
+
     }
 
 }

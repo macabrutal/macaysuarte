@@ -1,142 +1,135 @@
 <!DOCTYPE html>
 <html>
 
-  <link>
-  <!-- ROBOTO - Google font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+<link>
+<!-- ROBOTO - Google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="./styles.css" />
+<!-- CSS -->
+<link rel="stylesheet" href="./styles.css" />
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  <!-- bootswatch.com CSS -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/solar/bootstrap.min.css" integrity="sha384-NCwXci5f5ZqlDw+m7FwZSAwboa0svoPPylIW3Nf+GBDsyVum+yArYnaFLE9UDzLd" crossorigin="anonymous"> -->
+<!-- bootswatch.com CSS -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/solar/bootstrap.min.css" integrity="sha384-NCwXci5f5ZqlDw+m7FwZSAwboa0svoPPylIW3Nf+GBDsyVum+yArYnaFLE9UDzLd" crossorigin="anonymous"> -->
 
-  <link href="https://bootswatch.com/5/minty/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<link href="https://bootswatch.com/5/minty/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
-  <!-- fontawesome. -->
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<!-- fontawesome. -->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-  <title>Cuadros Maca y su arte</title>
-  <meta charset="UTF-8" />
+<title>Cuadros Maca y su arte</title>
+<meta charset="UTF-8" />
 
-  <!-- RESPONSIVE -->
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
-  </head>
+<!-- RESPONSIVE -->
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
 
-  <body>
-    <!-- NAV-->
-    <nav class="nav navbar navbar-expand-lg navbar-dark ">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="./img/logo_dark.png" class="logo" alt="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
-          aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<body>
+  <!-- NAV-->
+  <nav class="nav navbar navbar-expand-lg navbar-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="./img/logo_dark.png" class="logo" alt="logo">
+      </a>
 
-        <!-- Menú-->
-        <div class="collapse navbar-collapse" id="navbarColor01">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Conversemos</a>
-            </li>
-          </ul>
-          <!-- Carrito-->
-          <ul className="navbar-nav me-auto">
-            <li className="nav-item ">
-              <a id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModal" class="btn btn-carro ">Tu carro
-                de compras <i class="fas fa-shopping-cart fa-1x"></i></a>
-            </li>
-          </ul>
-          <!-- FIN Carrito-->
-        </div>
-        <!-- FIN Menú-->
-
-        <!-- LightMode / DarkMode-->
-        <ul>
-          <li><button id="btnLightMode" class="btnLightMode btn btn-light"> <i class="fas fa-sun"></i></button>
-          </li>
-          <li>
-            <button id="btnDarkMode" class="btnDarkMode btn btn-dark"><i class="fas fa-moon"></i></button>
+      <!-- Menú-->
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Conversemos</a>
           </li>
         </ul>
-        <!-- FIN LightMode / DarkMode-->
-
-        <div>
-
-        </div>
-
       </div>
-    </nav>
-    <!-- fin NAV-->
 
-    <div class="contenedor">
-      <!-- Obtener elemento por Id: getElementById() -->
-      <h1 id="title">Cuadros Maca y su arte</h1>
+      <!-- LightMode / DarkMode-->
+      <ul class="lightDarkMode">
+        <li><button id="btnLightMode" class="btnLightMode btn btn-light"> <i class="fas fa-sun"></i></button>
+        </li>
+        <li>
+          <button id="btnDarkMode" class="btnDarkMode btn btn-dark"><i class="fas fa-moon"></i></button>
+        </li>
+      </ul>
+      <!-- FIN LightMode / DarkMode-->
 
-      <!--  -->
+      <!-- Carrito-->
+      <ul className="navbar-nav me-auto">
+        <li className="nav-item ">
+          <a id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModal" class="btn btn-carro ">Tu carro
+            <i class="fas fa-shopping-cart fa-1x"></i></a>
+        </li>
+      </ul>
+      <!-- FIN Carrito-->
 
+      <!-- FIN Menú-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div>
+      </div>
+    </div>
+  </nav>
+  <!-- fin NAV-->
 
-      <!--Productos -->
-      <div id="divProductos" class="row productos"></div>
+  <div class="contenedor">
+    <!-- Obtener elemento por Id: getElementById() -->
+    <h1 id="title">Cuadros Maca y su arte</h1>
+    <!--  -->
 
-      <!-- MODAL -->
-      <div class="modal fade" id="idModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Lo que llevas en tu carrito de Compras:</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body" id="modal-body">
+    <!--Productos -->
+    <div id="divProductos" class="row productos"></div>
 
-            </div>
-            <div class="row ml-ato">
-              <p id="precioTotal"></p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="button" data-bs-dismiss="modal" class="btn btn-primary" id="botonFinalizar">Finalizar
-                Compra</button>
-            </div>
+    <!-- MODAL -->
+    <div class="modal fade" id="idModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Lo que llevas en tu carrito de Compras:</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="modal-body">
+          </div>
+          <div class="row ml-ato">
+            <p id="precioTotal"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" data-bs-dismiss="modal" class="btn btn-primary" id="botonFinalizar">Finalizar
+              Compra</button>
           </div>
         </div>
       </div>
-      <!-- fin MODAL -->
-
-      <!-- ARROW return to Top -->
-      <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
-
-
-      <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
-      <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-
-  
-
-      <!-- <span class="go-up" style="display: inline;"><img class="go-up-arrow" src="img/chevron-up.d3ef5917.svg" alt="up-arrow"></span> -->
     </div>
-    <footer>© 2021 Maca y su arte. Todos los derechos reservados</footer>
+    <!-- fin MODAL -->
 
-    <!-- CDN JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-      crossorigin="anonymous"></script>
+    <!-- ARROW return to Top -->
+    <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <!-- LLAMAR A LOS ARCHIVOS js -->
-    <script src="index.js"></script>
-    <script src="Producto.js"></script>
-    <script src="functions.js"></script>
-  </body>
+    <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <!-- <span class="go-up" style="display: inline;"><img class="go-up-arrow" src="img/chevron-up.d3ef5917.svg" alt="up-arrow"></span> -->
+  </div>
+  <footer>© 2021 Maca y su arte. Todos los derechos reservados</footer>
+
+  <!-- CDN JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- LLAMAR A LOS ARCHIVOS js -->
+  <script src="index.js"></script>
+  <script src="Producto.js"></script>
+  <script src="functions.js"></script>
+</body>
 
 </html>

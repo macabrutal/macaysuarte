@@ -94,18 +94,21 @@ function cargarCarritoModal(productosStorage) {
     compraTotal(productosStorage)
 }
 
-botonCarrito.addEventListener('click', () => {
+botonCarrito = document.getElementById("botonCarrito")
+botonFinalizar = document.getElementById("botonFinalizarCompra")
+
+botonCarrito && botonCarrito.addEventListener('click', () => {
     let productosStorage = JSON.parse(localStorage.getItem('carrito'))
     cargarCarritoModal(productosStorage)
 })
 
 // Gracias por tu compra!
-botonFinalizar.addEventListener('click', (event) => {
+botonFinalizar && botonFinalizar.addEventListener('click', (event) => {
     let productosStorage = JSON.parse(localStorage.getItem('carrito'))
     if (productosStorage.length === 0) {
         return;
     }
-    
+
 
     localStorage.setItem('carrito', JSON.stringify([]))
     swal("¡Gracias por su compra!", "Los productos serán enviados a la brevedad", "success");

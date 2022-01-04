@@ -52,7 +52,7 @@ let botonFinalizarCompra = document.getElementById("botonFinalizarCompra")
 let parrafoCompra = document.getElementById('precioTotal')
 let acumulador;
 
-fetch('productos.json')
+divProductos && fetch('productos.json')
     .then(response => response.json())
     .then(dataProductos => {
         dataProductos.forEach((productoEnArray, indice) => {
