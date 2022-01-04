@@ -473,6 +473,9 @@ footer {
         margin: 8px auto 2px !important;
         font-weight: bolder !important; 
     }
+    h4.inputs {
+        margin: 12px;
+    }
     h5.card-title {
         margin: 8px auto 0 !important;
         font-weight: bolder !important; 
