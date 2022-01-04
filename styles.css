@@ -466,7 +466,7 @@ footer {
     }
 
     h1 {
-        font-size: 30px !important;
+        font-size: 29px !important;
         margin-bottom: 0;
         font-weight: 300 !important; 
     }
@@ -480,7 +480,7 @@ footer {
     }
     p.card-text{
         font-size: 17px!important;
-        margin-bottom: 3px !important;
+        margin-bottom: 1px !important;
     }
 
     ol,
